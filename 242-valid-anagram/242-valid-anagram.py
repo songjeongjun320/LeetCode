@@ -1,9 +1,9 @@
 class Solution(object):
     def isAnagram(self, s, t):
-        list_s = []
-        list_t = []
         if len(s) != len(t):
             return False
+        list_s = []
+        list_t = []
         for _ in range(len(s)):
             list_s.append(s[_])
             list_t.append(t[_])
