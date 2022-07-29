@@ -15,5 +15,7 @@ class Solution(object):
                 top.next = list2
                 list2 = list2.next
             top = top.next
+        print(root)
         top.next = list1 or list2
+        print(root)
         return root.next
