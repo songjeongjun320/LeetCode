@@ -3,7 +3,7 @@ class Solution(object):
         switch = True
         output = []
         sum = 0
-
+        print("Hello World")
         for i in range(len(nums)):
             if switch == False:
                 break
