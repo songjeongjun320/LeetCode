@@ -1,5 +1,5 @@
 class Solution(object):
-    def twoSum(self, nums, target):
+    def twoSum(nums, target):
         switch = True
         output = []
         sum = 0
