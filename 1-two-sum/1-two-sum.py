@@ -18,4 +18,6 @@ class Solution(object):
                         break
 
         return output
+
+print(Solution.twoSum([1,2,3,4],5))
         
