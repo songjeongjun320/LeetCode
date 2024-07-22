@@ -14,8 +14,9 @@ class Solution:
                 output[r] = tmp
                 return reverseWords_helper(l + 1, r - 1)
         reverseWords_helper(l, r)
-        return output
-
+        return " ".join(output)
+    
+    
 solution = Solution()
 s = "the sky is blue"
 print(solution.reverseWords(s))
