@@ -2,39 +2,41 @@ from typing import List, Tuple
 
 class Solution:
     def compress(self, chars: List[str]) -> int:
-        if len(chars) == 1:
-            return 1
-        prev: int = 0
-        curr: int = 0
-        cnt: int = 1
-        write: int = 0
+        i: int = 0
+        j: int = 0
+        cnt: int = 0
         output: str = ""
 
-        while curr < len(chars) - 1:
-            if prev == curr:
-                output += chars[prev]
-                curr += 1
-            if chars[prev] == chars[curr]:
-                cnt += 1
-            else:
+        if len(chars) == 1 :
+            return 1
+
+        while i < len(chars):
+            while j < len(chars):
+                if chars[i] == chars[j]:
+                    if j == len(chars) - 1:
+                        output += chars[i]
+                        i = j
+                        i += 1
+                    cnt += 1
+                else:
+                    output += chars[i]
+                    if cnt != 1:
+                        output += str(cnt)
+                    cnt = 0
+                    i = j
+                    break
+                j += 1
+            if j == len(chars):
                 if cnt != 1:
                     output += str(cnt)
-                    cnt = 1
-                prev = curr 
-                continue
-            prev += 1
-            curr += 1
-        if chars[prev] == chars[curr]:
-            cnt += 1
-            output += str(cnt)
-        else:
-            output += str(cnt)
+
 
         for i in range(len(output)):
             chars[i] = output[i]
-        return chars
+        print(output)
+        return len(output)
 
 
-chars = ["a","a","a","b","b","a","a"]
+chars = ["a","a","b","b","c","c","c"]
 sol = Solution()
 print(sol.compress(chars))
