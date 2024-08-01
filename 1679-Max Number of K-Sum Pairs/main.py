@@ -5,16 +5,10 @@ class Solution:
         list: List[int] = nums.copy()
         l: int = 0
         result: int = 0
-        
-        i:int = 0
-        while i < len(list):
-            if list[i] >= k:
-                list.pop(i)
-            else:
-                i += 1
 
         while l <= len(list) - 2:
-            tmp: int = 0
+            if list[l] >= k:
+                list.pop(l)
             try:
                 tmp = list.index(k - list[l], l + 1)
                 list.pop(tmp)
