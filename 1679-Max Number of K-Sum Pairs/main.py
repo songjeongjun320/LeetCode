@@ -3,9 +3,15 @@ from typing import List, Tuple
 class Solution:
     def maxOperations(self, nums: List[int], k: int) -> int:
         list: List[int] = nums.copy()
-        # list.sort()
         l: int = 0
         result: int = 0
+        
+        i:int = 0
+        while i < len(list):
+            if list[i] >= k:
+                list.pop(i)
+            else:
+                i += 1
 
         while l <= len(list) - 2:
             tmp: int = 0
@@ -18,8 +24,7 @@ class Solution:
                 l += 1      
 
         return result
-    
-    
+
 
 sol = Solution()
 nums: int = [3,1,3,4,3]
