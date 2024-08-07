@@ -10,3 +10,6 @@ class Solution:
                 max_height = curr
         return max_height
 
+sol: Solution = Solution()
+nums = [1,2,3,4,5]
+print(sol.largestAltitude(nums))
