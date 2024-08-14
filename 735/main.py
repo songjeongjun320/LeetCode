@@ -3,27 +3,29 @@ from typing import List, Tuple
 class Solution:
     def asteroidCollision(self, asteroids: List[int]) -> List[int]:
         result: List[int] = asteroids
-        i: int = 1
-        while -1 < i < len(result):
-            if result[i-1] * result[i] > 0:
-                i += 1
-            else:
-                if result[i-1] < result[i]:
-                    i += 1
-                else:
-                    if abs(result[i-1]) < abs(result[i]):
-                        result.pop(i-1)
+        i: int = 0
+
+
+        while i < len(result):
+            if result[i] < 0:
+                for j in range(i - 1 ,-1,-1):
+                    if result[i] * result[j] > 0:
+                        break
+                    if abs(result[i]) > result[j]:
+                        result.pop(j)
                         i -= 1
-                    elif abs(result[i-1]) == abs(result[i]):
-                        result.pop(i-1)
-                        result.pop(i-1)
+                    elif result[j] == abs(result[i]):
+                        result.pop(i)
+                        result.pop(j)
                         i -= 1
+                        break
                     else:
                         result.pop(i)
+                        i -= 1
+                        break
+            i += 1
         return result
 
-    
-
 sol: Solution = Solution()
-asteroids: List[int] = [1,-2,-2,1]
+asteroids: List[int] = [1,1,-1,-2]
 print(sol.asteroidCollision(asteroids))
