@@ -17,7 +17,7 @@ class Solution:
                     elif result[j] == abs(result[i]):
                         result.pop(i)
                         result.pop(j)
-                        i -= 1
+                        i -= 2
                         break
                     else:
                         result.pop(i)
