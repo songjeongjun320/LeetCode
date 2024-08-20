@@ -14,7 +14,7 @@ class Solution:
             cnt += 1
             curr = curr.next
         if cnt == 1 or cnt == 0:
-            return ListNode()
+            return 
 
         middle:int = cnt // 2
 
