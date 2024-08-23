@@ -7,6 +7,8 @@ class ListNode:
 
 class Solution:
     def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head:
+            return head
         curr: ListNode = head
         tail: ListNode = ListNode()
         tail_head: ListNode = tail
@@ -16,7 +18,9 @@ class Solution:
             if not curr.next:
                 break
             if not curr.next.next:
-                curr = curr.next
+                tmp = curr.next
+                tail.next = tmp
+                curr.next = None
                 break
             tmp = curr.next
             curr.next = curr.next.next
@@ -24,13 +28,14 @@ class Solution:
             tail.next = tmp
             tail = tail.next
             curr = curr.next
+    
         curr.next = tail_head.next
 
         return head
     
 sol: Solution = Solution()
 
-val:List[int] = [1,2,3,4,5]
+val:List[int] = [1,2,3,4,5,6]
 head: ListNode = ListNode(val[0])
 curr:ListNode = head
 
@@ -41,6 +46,6 @@ for item in val[1:]:
 print(sol.oddEvenList(head))
 
 curr = head
-for i in range(5):
+for i in range(6):
     print(curr.val)
     curr = curr.next
