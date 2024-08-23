@@ -16,15 +16,25 @@ class Solution:
             if not curr.next:
                 tail = curr
             curr = curr.next
-            
+
+
         curr = head
         i: int = 0
         while i < cnt:
-            if i % 2 == 0:
-                tail.next = curr.next
-                tail = tail.next
-                curr.next = curr.next.next
-                i += 1
+            t = head
+            print("i : ", i)
+            for j in range(cnt):
+                print(t.val)
+                t = t.next
+
+
+            print(tail.val)
+            tail.next = curr.next
+            tail = tail.next
+            tail.next = None
+            curr.next = curr.next.next
+            cnt -= 1
+            curr = curr.next
             i += 1
 
         return head
