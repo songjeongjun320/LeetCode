@@ -7,35 +7,24 @@ class ListNode:
 
 class Solution:
     def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        cnt: int = 0
         curr: ListNode = head
-        tail: ListNode = head
-
-        while curr:
-            cnt += 1
-            if not curr.next:
-                tail = curr
-            curr = curr.next
-
-
+        tail: ListNode = ListNode()
+        tail_head: ListNode = tail
         curr = head
-        i: int = 0
-        while i < cnt:
-            t = head
-            print("i : ", i)
-            for j in range(cnt):
-                print(t.val)
-                t = t.next
 
-
-            print(tail.val)
-            tail.next = curr.next
-            tail = tail.next
-            tail.next = None
+        while True:
+            if not curr.next:
+                break
+            if not curr.next.next:
+                curr = curr.next
+                break
+            tmp = curr.next
             curr.next = curr.next.next
-            cnt -= 1
+            tmp.next = None
+            tail.next = tmp
+            tail = tail.next
             curr = curr.next
-            i += 1
+        curr.next = tail_head.next
 
         return head
     
@@ -50,3 +39,8 @@ for item in val[1:]:
     curr = curr.next
 
 print(sol.oddEvenList(head))
+
+curr = head
+for i in range(5):
+    print(curr.val)
+    curr = curr.next
