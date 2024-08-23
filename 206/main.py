@@ -7,25 +7,29 @@ class ListNode():
     
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        curr: ListNode = head
-
-        if not curr:
+        if not head:
             return head
-        
-        tail: ListNode = curr
-        curr = curr.next
+        tail: ListNode = ListNode()
 
-        while curr:
-            print(curr.val)
-            tmp = curr
-            curr = curr.next
+        while head:
+            print(head.val)
+            if not head.next:
+                break
+            tmp = head
+            head = head.next
             tmp.next = tail
-            tmp = tail
-
+            tail = tmp
+        head.next = tail
+        curr = head
+        while True:
+            if not curr.next.next:
+                curr.next = None
+                break
+            curr = curr.next
+        
         return head
 
-
-tmp: List[int] = [1,2,3,4,5]
+tmp: List[int] = [1,2,3]
 head: ListNode = ListNode(tmp[0])
 curr = head
 for item in tmp[1:]:
@@ -33,7 +37,7 @@ for item in tmp[1:]:
     curr = curr.next
 
 sol: Solution = Solution()
-print(sol.reverseList(head))
+head = sol.reverseList(head)
 
 
 curr = head
