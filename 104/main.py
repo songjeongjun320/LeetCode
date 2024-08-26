@@ -13,7 +13,6 @@ class Solution:
         
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
         
-
 root_list: List[int] = [3,9,20,None,None,15,7]
 
 def build_tree(index: int, root_list: List[Optional[int]]) -> Optional[TreeNode]:
