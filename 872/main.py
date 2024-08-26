@@ -8,7 +8,10 @@ class TreeNode:
 
 class Solution:
     def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-        return
+        if root1 != root2:
+            return False
+        return self.leafSimilar(root1.left, root2.right)
+
 
     def build_tree(self, index:int, root_list: List[int]) -> TreeNode:
         if index >= len(root_list) or root_list is None:
@@ -24,8 +27,9 @@ root1_list: List[int] = [3,5,1,6,2,9,8,None,None,7,4]
 root2_list: List[int] = [3,5,1,6,7,4,2,None,None,None,None,None,None,9,8]
 
 sol:Solution = Solution()
-root1: TreeNode = sol.build_tree(root1_list)
-root2: TreeNode = sol. build_tree(root2_list)
+root1: TreeNode = sol.build_tree(0, root1_list)
+root2: TreeNode = sol. build_tree(0, root2_list)
 print(sol.leafSimilar(root1, root2))
+
 
 
