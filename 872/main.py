@@ -8,9 +8,20 @@ class TreeNode:
 
 class Solution:
     def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-        if root1 != root2:
+        root1_leaves: List[int] = []
+        root2_leaves: List[int] = []
+        def leafSimilar_helper(root1: Optional[TreeNode], root2: Optional[TreeNode]) -> None:
+            global root1_leaves
+            global root2_leaves
+            if root1.left == root1.right == None:
+                root1_leaves.append(root1.val)
+                root2_leaves.append(root2.val)
+            return leafSimilar_helper(root1.left, root2.right)
+        
+        if root1_list == root2_leaves:
+            return True
+        else:
             return False
-        return self.leafSimilar(root1.left, root2.right)
 
 
     def build_tree(self, index:int, root_list: List[int]) -> TreeNode:
