@@ -18,6 +18,8 @@ class Solution:
                 root2_leaves.append(root2.val)
             return leafSimilar_helper(root1.left, root2.right)
         
+        leafSimilar_helper(root1, root2)
+        
         if root1_list == root2_leaves:
             return True
         else:
