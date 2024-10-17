@@ -1,0 +1,237 @@
+Apple
+NVIDIA
+Microsoft
+Alphabet (Google)
+Amazon
+Meta Platforms (Facebook)
+TSMC
+Broadcom
+Tesla
+Oracle
+Tencent
+Netflix
+ASML
+Samsung
+Salesforce
+SAP
+AMD
+Alibaba
+Cisco
+Adobe
+IBM
+QUALCOMM
+ServiceNow
+Texas Instruments
+Pinduoduo
+Intuit
+Uber
+Arm Holdings
+Applied Materials
+Schneider Electric
+Booking Holdings (Booking.com)
+Meituan
+Arista Networks
+Micron Technology
+Palo Alto Networks
+Automatic Data Processing
+Sony
+Analog Devices
+Fiserv
+Shopify
+greenhouse
+MercadoLibre
+Keyence
+SK Hynix
+Intel
+Lam Research
+Palantir
+Dell
+Foxconn (Hon Hai Precision Industry)
+KLA
+Airbnb
+Equinix
+PayPal
+Synopsys
+CrowdStrike
+Xiaomi
+Spotify
+Tokyo Electron
+Cadence Design Systems
+Marvell Technology Group
+Constellation Software
+Workday
+MediaTek
+Autodesk
+DoorDash
+Nintendo
+Fortinet
+Roper Technologies
+NXP Semiconductors
+Jingdong Mall
+SeatGeek
+The Trade Desk
+VMware/Broadcom
+Sea (Garena)
+NetEase
+Coinbase
+Teachable
+FICO
+Fidelity National Information Services
+Atlassian
+AppLovin
+Delta Electronics (Thailand)
+Adyen
+Dassault Systèmes
+Coupang
+Block (Square)
+TE Connectivity
+Monolithic Power Systems
+Infineon
+IQVIA
+Datadog
+Microchip Technology
+Wolters Kluwer
+SMIC
+Snowflake
+Advantest
+MicroStrategy
+Electronic Arts
+Trip.com
+Quanta Computer
+Veeva Systems
+Murata Manufacturing
+CoStar Group
+Verifone
+Liberty Mutual Insurance
+Remitly
+Getty Images
+Concur (SAP Concur)
+F5
+Tableau
+Snap Inc.
+EXPERIAN
+Outreach Corporation
+AdSwerve, Inc.
+Avalara
+Freshworks
+Apptentive
+Expedia Group
+Qualtrics
+Carbon Robotics
+Porch
+Arrow Electronics
+Big Fish Games
+Highspot
+Dropbox
+Cisco
+PagerDuty
+Clari
+Asana
+DataGrail
+HoneyBook, Inc.
+Lyft
+Apple
+Fastly
+Roblox
+Salesforce
+C3 IoT
+Docusign
+Instacart
+Monday.com
+Atlassian
+Google
+Square (Block)
+Amplitude
+Course Hero
+Doximity
+Juniper Networks
+Dolby Laboratories
+Snap Inc.
+FloQast
+System1
+ChowNow
+Hulu
+Appetize
+DISQO, Inc.
+LogicMonitor
+Metropolis Technologies, Inc.
+Google
+The Aerospace Corporation
+Core Digital Media, Inc.
+Mission Cloud
+Apple
+GoodRx
+Disney Interactive
+BlackLine
+GumGum, Inc.
+Wevr
+Headspace
+YouTube
+Cyber Defense Group
+EditShare
+HG Insights
+Horus Studio
+Qualcomm
+Zovio
+Intuit
+Tealium
+Classy
+MindTouch
+Blue Tech
+Drata Inc.
+ServiceNow
+Inseego
+BlueHornet Networks, Inc.
+Bitcot
+ClickUp
+Cubic Corporation
+CSC
+Teradata
+Cloudbeds
+Maxwell Technologies
+Brain Corp
+ecoATM, LLC
+BL3NDlabs
+Dexcom
+EffectiveSoft
+etsy
+slack
+page ai
+ANSYS
+SAP
+Gecko Robotics
+Voci Technologies, Inc.
+Clarivate
+Digiprima Technologies
+Petuum Inc.
+Radial
+Bentley Systems
+AllianceTek Inc.
+SunGard Availability Services
+Accenture
+Comcast
+HealthVerity, Inc.
+PNC Financial Services Group
+RoadRunner Recycling
+Duolingo
+CDI Corporation
+Unisys
+Chop Dawg
+Crossbeam
+HM Health Solutions Inc.
+Qlik
+DISYS
+HP
+Agilent Technologies
+Facebook
+Adobe
+AECOM
+Omnicell
+Amgen
+BlackLine
+Coupa
+Informatica
+DataStax
+Arevtech
+Zendesk
+Broadcom
