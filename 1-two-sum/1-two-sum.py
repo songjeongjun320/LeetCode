@@ -1,9 +1,9 @@
 class Solution(object):
-    def twoSum(self, nums, target):
+    def twoSum(nums, target):
         switch = True
         output = []
         sum = 0
-
+        print("Hello World")
         for i in range(len(nums)):
             if switch == False:
                 break
@@ -18,4 +18,6 @@ class Solution(object):
                         break
 
         return output
+
+print(Solution.twoSum([1,2,3,4],5))
         
